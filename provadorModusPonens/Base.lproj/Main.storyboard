@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="provadorModusPonens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2K-8q-21h">
+                                <rect key="frame" x="32" y="70" width="311" height="29"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Provador de Modus Ponens">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base de Dados" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwy-yb-EyX">
+                                <rect key="frame" x="32" y="199" width="311" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escreva uma sentença" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igH-ML-Amr">
+                                <rect key="frame" x="32" y="240" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="337-wx-Ekp">
+                                <rect key="frame" x="46" y="286" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Adicionar Sentença">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="adicionarSentenca:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O8C-0E-iB7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta Esperada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVu-by-yYe">
+                                <rect key="frame" x="32" y="396" width="311" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Escreva a resposta esperada" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bBn-9d-QCO">
+                                <rect key="frame" x="32" y="437" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKL-b8-8wM">
+                                <rect key="frame" x="46" y="483" width="283" height="30"/>
+                                <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Provar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="provar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKq-RS-oAY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.88409832804828414" green="0.981890024413694" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="337-wx-Ekp" firstAttribute="top" secondItem="igH-ML-Amr" secondAttribute="bottom" constant="16" id="4sz-TL-ysS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HKL-b8-8wM" secondAttribute="trailing" constant="30" id="4yI-6Z-nKH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bBn-9d-QCO" secondAttribute="trailing" constant="16" id="6Am-Wr-afm"/>
+                            <constraint firstItem="HKL-b8-8wM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="6NA-LK-Kn3"/>
+                            <constraint firstItem="P2K-8q-21h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="8bh-PO-SO8"/>
+                            <constraint firstItem="Uwy-yb-EyX" firstAttribute="top" secondItem="P2K-8q-21h" secondAttribute="bottom" constant="100" id="A2K-97-MRA"/>
+                            <constraint firstItem="Uwy-yb-EyX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="A5q-JW-sLl"/>
+                            <constraint firstItem="bBn-9d-QCO" firstAttribute="top" secondItem="lVu-by-yYe" secondAttribute="bottom" constant="20" id="BfL-4L-fHC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lVu-by-yYe" secondAttribute="trailing" constant="16" id="EaB-nw-0QG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="337-wx-Ekp" secondAttribute="trailing" constant="30" id="GlG-7R-jgD"/>
+                            <constraint firstItem="HKL-b8-8wM" firstAttribute="top" secondItem="bBn-9d-QCO" secondAttribute="bottom" constant="16" id="HgV-KE-7uD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="igH-ML-Amr" secondAttribute="trailing" constant="16" id="Irk-Rz-pPi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uwy-yb-EyX" secondAttribute="trailing" constant="16" id="Nb9-ug-5q0"/>
+                            <constraint firstItem="bBn-9d-QCO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="Phl-No-rkG"/>
+                            <constraint firstItem="lVu-by-yYe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="T8N-3g-a2X"/>
+                            <constraint firstItem="lVu-by-yYe" firstAttribute="top" secondItem="337-wx-Ekp" secondAttribute="bottom" constant="80" id="X8X-Gc-H7T"/>
+                            <constraint firstItem="337-wx-Ekp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="sSN-uu-bUN"/>
+                            <constraint firstItem="igH-ML-Amr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="ya0-8c-TLr"/>
+                            <constraint firstItem="igH-ML-Amr" firstAttribute="top" secondItem="Uwy-yb-EyX" secondAttribute="bottom" constant="20" id="ye0-Ko-OTc"/>
+                            <constraint firstItem="P2K-8q-21h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="yg0-jH-vQb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="P2K-8q-21h" secondAttribute="trailing" constant="16" id="zmn-Ul-fxt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="respostaEsperada" destination="bBn-9d-QCO" id="xk3-pE-uis"/>
+                        <outlet property="sentenca" destination="igH-ML-Amr" id="Vkg-Rz-Rk7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
